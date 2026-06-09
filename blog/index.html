@@ -14,6 +14,22 @@
 #preloader { transition: opacity 0.5s ease; }
 [data-aos] { opacity: 1 !important; transform: none !important; visibility: visible !important; }
 .blog-area { padding: 100px 0; min-height: 500px; }
+
+.blog-item { position: relative; cursor: pointer; z-index: 1; }
+.blog-item .overlay-link { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 10 !important; 
+    display: block !important;
+}
+.blog-item .infos { position: relative; z-index: 5; pointer-events: none; }
+.blog-item a:hover { text-decoration: none; }
+
 </style>
 <script>
 setTimeout(function() {
@@ -49,14 +65,165 @@ setTimeout(function() {
 </header>
 <section class="blog-area">
     <div class="container">
-        <h1>Technical Insights & Articles</h1>
-        <p>Explore my latest articles on AI, machine learning, and full-stack development.</p>
-        <!-- Content will load here -->
-        <div class="row">
-            <div class="col-md-12">
-                <p>Restoring blog listing...</p>
+        <div class="row" style="margin-bottom: 60px;">
+            <div class="col-md-12 text-center" data-aos="fade-up">
+                <h1 class="section-heading" style="font-size: 48px; margin-bottom: 20px;">
+                    Technical <span style="color: #5B78F6;">Insights</span>
+                </h1>
+                <p style="font-size: 18px; color: rgba(255,255,255,0.6);">Exploring the frontiers of AI, System Design, and Modern Web Engineering.</p>
             </div>
         </div>
+        <div class="row">
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="api-security-beyond-jwt.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Security</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Advanced API Security Beyond JWT</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="ci-cd-best-practices.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">DevOps</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">CI/CD Best Practices for Modern Dev</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="clean-code-practices.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Development</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Clean Code Practices for Scalability</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="database-optimization.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Database</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Database Optimization Strategies</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="microservices-vs-monolith.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Architecture</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Microservices vs Monolith Architecture</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="nextjs-15-features.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Frontend</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Exploring Next.js 15 New Features</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="real-time-websockets.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Backend</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Real-time Apps with WebSockets</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="scaling-web-apps.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Architecture</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Scaling Web Applications for Growth</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="serverless-computing-2026.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Cloud</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">The Future of Serverless Computing</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" data-aos="zoom-in">
+        <div class="blog-item shadow-box" style="padding: 30px; border-radius: 30px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+            <a href="tech-project-management.html" class="overlay-link"></a>
+            <img src="../wp-content/themes/gridx/assets/images/bg1.png" alt="BG" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.1; z-index: -1;">
+            <div class="infos">
+                <h5 style="color: #5B78F6; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;">Management</h5>
+                <h2 style="font-size: 24px; margin-bottom: 20px; color: #fff;">Tech Project Management for Engineers</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span style="color: rgba(255,255,255,0.5); font-size: 14px;">Read Article</span>
+                    <img src="../wp-content/themes/gridx/assets/images/icon.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </div>
 </section>
 <footer class="footer-area">
